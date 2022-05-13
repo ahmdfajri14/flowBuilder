@@ -1,0 +1,193 @@
+.v-data-table {
+    table {
+      td {
+        padding: 10px 16px;
+      }
+    }
+  }
+  
+  .table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+  
+    th,
+    td {
+      padding: 5px;
+      vertical-align: middle;
+      border-top: 1px solid #ddd;
+    }
+  
+    td {
+      ul {
+        &.list {
+          list-style-type: square;
+          margin: 0;
+        }
+  
+        &.list-2 {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          word-break: break-word;
+  
+          li {
+            border: 1px solid #ddd;
+            border-bottom: none;
+            padding: 5px;
+  
+            &:last-child {
+              border-bottom: 1px solid #ddd;
+            }
+          }
+        }
+      }
+    }
+  
+    thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #ddd;
+    }
+  
+    tbody+tbody {
+      border-top: 2px solid #ddd;
+    }
+  
+    &.two-cols {
+  
+      th,
+      td {
+        &:first-child {
+          text-align: left;
+        }
+  
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  
+    &.table-borderfull {
+      margin-bottom: 10px;
+  
+      td {
+        border: 1px solid #ddd;
+      }
+    }
+  
+    &.table-borderless {
+  
+      th,
+      td {
+        border: none;
+      }
+    }
+  }
+  
+  .tab-table.tab-table-custom,
+  .dkm-table {
+    font-size: 14px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  
+    table {
+      thead {
+        th {
+          text-align: left;
+          word-break: normal;
+          font-size: 14px;
+          font-weight: bold;
+          color: #777;
+  
+          &.sortable {
+            text-align: center;
+            position: relative;
+  
+            &.active {
+              color: #777;
+            }
+  
+            &:hover {
+              color: #777;
+            }
+  
+            &.asc {
+              i {
+                &.mdi-arrow-up {
+                  padding-top: 3px;
+  
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+            }
+  
+            &.desc {
+              i {
+                &.mdi-arrow-up {
+                  padding-bottom: 6px;
+  
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+  
+          i {
+            position: absolute;
+            right: 8px;
+            top: 18px;
+  
+            &.mdi-arrow-up {
+              display: inline-block;
+              line-height: 6px;
+              opacity: 1;
+  
+              &::before {
+                // content: "\F360";
+                display: block;
+                color: #00d088;
+              }
+  
+              &::after {
+                // content: "\F360";
+                display: block;
+                color: #00d088;
+                transform: rotate(180deg);
+                font: normal normal normal 24px/1 "Material Design Icons";
+                font-size: inherit;
+                text-rendering: auto;
+                line-height: inherit;
+                -webkit-font-smoothing: antialiased;
+              }
+            }
+          }
+        }
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f5f6fa;
+      }
+  
+      td {
+        font-weight: normal;
+        word-break: normal;
+        // color: #939393;
+        color: #777;
+      }
+    }
+  
+    .theme--light.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row) {
+      border-bottom: 0 solid transparent;
+    }
+  }
+  
+  .theme--light.v-data-table.dkm-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row) {
+    border-bottom: 0 solid transparent;
+  }
+  
+  .v-select-list {
+    font-family: 'lato';
+  }

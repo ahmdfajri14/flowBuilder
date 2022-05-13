@@ -1,0 +1,37 @@
+.hr {
+  .v-divider {
+    border-color: #eaeaea;
+  }
+}
+
+.column-spacing:first-child {
+  padding-left: 0px !important;
+}
+.column-spacing:last-child {
+  padding-right: 0px !important;
+}
+
+.v-btn {
+  border-radius: 6px !important;
+  letter-spacing: 0px !important;
+}
+
+.v-menu__content {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08) !important;
+}
+// fix overlapped menu profile
+.app--toolbar {
+  position: relative;
+  z-index: 2;
+
+  +.content-wrapper {
+      position: relative;
+      z-index: 1;
+  }
+}
+.wrapper--border {
+  border: 1px solid #eaeaea;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 6px;
+}
